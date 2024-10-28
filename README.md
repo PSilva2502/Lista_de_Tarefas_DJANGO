@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>README - Lista de Tarefas</title>
+    README - Lista de Tarefas
     
 </head>
 <body>
 
 <h1>📋 Minha Lista de Tarefas</h1>
-![image](https://github.com/user-attachments/assets/6c3f2899-c5e8-435a-80e8-63fae2385fb7)
-![image](https://github.com/user-attachments/assets/ceb79eb6-bc4b-43b4-a444-3575c13793e2)
+
 
 
 <p>Este é um projeto simples de lista de tarefas, onde o usuário pode adicionar, visualizar e gerenciar suas tarefas diárias.</p>
@@ -36,6 +35,7 @@
     <li>HTML5</li>
     <li>CSS3</li>
     <li>JavaScript</li>
+    <li>Python</li>
 </ul>
 
 <h2>📄 Licença</h2>
