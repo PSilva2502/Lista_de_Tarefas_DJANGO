@@ -20,10 +20,10 @@ Django
 HTML/CSS
 JavaScript
 <br>
-Pré-requisitos
+Pré-requisitos<br>
 Certifique-se de ter as seguintes ferramentas instaladas:
 <br>
-  Python 3.x
+  Python 3.x<br>
   Git
 
 Instalação
