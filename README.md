@@ -15,7 +15,7 @@
 
 
 
-<p>Este é um projeto simples de lista de tarefas, onde o usuário pode adicionar, visualizar e gerenciar suas tarefas diárias.</p>
+<p>Este é um projeto pequeno de lista de tarefas, onde o usuário pode adicionar, visualizar e gerenciar suas tarefas diárias.</p>
 
 <h2>🎯 Funcionalidades</h2>
 <ul>
