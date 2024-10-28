@@ -101,7 +101,6 @@
       <li>Inicie o servidor Django:
         <pre><code>python manage.py runserver</code></pre>
       </li>
-      <li>Abra <code>http://127.0.0.1:8000/</code> no navegador para acessar o sistema.</li>
     </ul>
   </li>
   
