@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    README - Lista de Tarefas
+    
     
 </head>
 <body>
 
 <h1>📋 Minha Lista de Tarefas</h1>
+
+![image](https://github.com/user-attachments/assets/5a85019c-05ac-42e3-a7eb-8e255f4db255) <br>
+![image](https://github.com/user-attachments/assets/89ea1dd5-7f40-47e4-b6f4-b20f41af6718)
 
 
 
