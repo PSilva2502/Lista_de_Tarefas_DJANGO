@@ -69,10 +69,19 @@
   </li>
   
   <li>
-    <strong>Instale as dependências:</strong>
+    <strong>Instale as dependência:</strong>
     <ul>
       <li>Com o ambiente virtual ativado, instale as dependências do projeto (supondo que elas estejam listadas em um arquivo <code>requirements.txt</code>):
         <pre><code>pip install -r requirements.txt</code></pre>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>Instale o DJANGO:</strong>
+    <ul>
+      <li>Com o ambiente virtual ativado, instale o DJANGO <code>DJANGO</code>):
+        <pre><code>pip install DJANGO</code></pre>
       </li>
     </ul>
   </li>
