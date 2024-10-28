@@ -12,26 +12,28 @@ Funcionalidades
 Adicionar uma nova tarefa com um título e uma descrição.
 Exibir as tarefas em uma lista.
 Clicar em uma tarefa para visualizar a descrição completa em um modal.
+<br>
 Tecnologias Utilizadas
 Python
 Django
 HTML/CSS
 JavaScript
+<br>
 Pré-requisitos
 Certifique-se de ter as seguintes ferramentas instaladas:
 
-Python 3.x
-Git
+  Python 3.x
+  Git
 
 Instalação
 1 - Clone o repositório:
-git clone https://github.com/seu_usuario/nome_do_repositorio.git
+  git clone https://github.com/seu_usuario/nome_do_repositorio.git
 
 2 - Navegue para o diretório do projeto:
-cd nome_do_repositorio
+  cd nome_do_repositorio
 
 3 - Crie um ambiente virtual:
-python -m venv venv
+  python -m venv venv
 
 4 - Ative o ambiente virtual:
   Windows:
@@ -40,10 +42,13 @@ python -m venv venv
   No Linux/Mac:
   source venv/bin/activate
 
-5 - Execute as migrações do banco de dados:
+5 - Instale o Django:
+  pip install django
+
+6 - Execute as migrações do banco de dados:
   python manage.py migrate
 
-6 - Inicie o servidor de desenvolvimento:
+7 - Inicie o servidor de desenvolvimento:
   python manage.py runserver
 
 Estrutura do Projeto
