@@ -13,7 +13,8 @@ Adicionar uma nova tarefa com um título e uma descrição.
 Exibir as tarefas em uma lista.
 Clicar em uma tarefa para visualizar a descrição completa em um modal.
 <br>
-Tecnologias Utilizadas
+Tecnologias Utilizadas:
+<br>
 Python
 Django
 HTML/CSS
@@ -21,45 +22,45 @@ JavaScript
 <br>
 Pré-requisitos
 Certifique-se de ter as seguintes ferramentas instaladas:
-
+<br>
   Python 3.x
   Git
 
 Instalação
-1 - Clone o repositório:
+1 - Clone o repositório:<br>
   git clone https://github.com/seu_usuario/nome_do_repositorio.git
 
-2 - Navegue para o diretório do projeto:
+2 - Navegue para o diretório do projeto:<br>
   cd nome_do_repositorio
 
-3 - Crie um ambiente virtual:
+3 - Crie um ambiente virtual:<br>
   python -m venv venv
 
-4 - Ative o ambiente virtual:
-  Windows:
+4 - Ative o ambiente virtual:<br>
+  Windows:<br>
   venv\Scripts\activate
-  
-  No Linux/Mac:
+  <br>
+  No Linux/Mac:<br>
   source venv/bin/activate
 
-5 - Instale o Django:
+5 - Instale o Django:<br>
   pip install django
 
-6 - Execute as migrações do banco de dados:
+6 - Execute as migrações do banco de dados:<br>
   python manage.py migrate
 
-7 - Inicie o servidor de desenvolvimento:
+7 - Inicie o servidor de desenvolvimento:<br>
   python manage.py runserver
 
-Estrutura do Projeto
+Estrutura do Projeto<br>
 templates/: Contém os arquivos HTML.
 static/: Contém os arquivos CSS e JavaScript.
 tarefas/: Diretório principal da aplicação Django.
 
-Como Usar
-1 - Na página inicial, insira o título e a descrição da tarefa nos campos correspondentes.
-2 - Clique em "Adicionar Tarefa" para adicionar a tarefa à lista.
+Como Usar<br>
+1 - Na página inicial, insira o título e a descrição da tarefa nos campos correspondentes.<br>
+2 - Clique em "Adicionar Tarefa" para adicionar a tarefa à lista.<br>
 3 - Clique em qualquer tarefa na lista para visualizar sua descrição completa em um modal.
-
-Licença
+<br>
+Licença<br>
 Este projeto está sob a licença MIT.
