@@ -25,13 +25,94 @@
 </ul>
 
 <h2>🚀 Como Usar</h2>
+
+<p>Este passo a passo mostra como configurar o ambiente e executar o sistema localmente:</p>
+
 <ol>
-    <li>Faça o download do projeto ou clone o repositório.</li>
-    <li>Abra o arquivo <code>index.html</code> em um navegador.</li>
-    <li>Preencha o campo de "Nova tarefa" e "Descrição da tarefa" e clique em <strong>Adicionar Tarefa</strong> para adicionar uma nova tarefa à lista.</li>
+  <li>
+    <strong>Pré-requisitos:</strong>
+    <ul>
+      <li>Certifique-se de ter o <strong>Python</strong> instalado em sua máquina. Você pode baixá-lo no <a href="https://www.python.org/downloads/">site oficial do Python</a>.</li>
+      <li>Opcional: Recomenda-se instalar o <strong>Git</strong> para clonar o repositório (se ainda não tiver baixado o código).</li>
+    </ul>
+  </li>
+  
+  <li>
+    <strong>Clone o repositório:</strong>
+    <ol>
+      <li>Abra o terminal e execute o comando abaixo para clonar o repositório do GitHub (substitua <code>&lt;url-do-repositorio&gt;</code> pela URL do seu repositório):
+        <pre><code>git clone &lt;url-do-repositorio&gt;</code></pre>
+      </li>
+      <li>Acesse a pasta do projeto:
+        <pre><code>cd nome-da-pasta-do-projeto</code></pre>
+      </li>
+    </ol>
+  </li>
+  
+  <li>
+    <strong>Crie e ative um ambiente virtual:</strong>
+    <ol>
+      <li>No terminal, execute:
+        <pre><code>python -m venv venv</code></pre>
+      </li>
+      <li>Ative o ambiente virtual:
+        <ul>
+          <li>No <strong>Windows</strong>:
+            <pre><code>venv\Scripts\activate</code></pre>
+          </li>
+          <li>No <strong>macOS/Linux</strong>:
+            <pre><code>source venv/bin/activate</code></pre>
+          </li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  
+  <li>
+    <strong>Instale as dependências:</strong>
+    <ul>
+      <li>Com o ambiente virtual ativado, instale as dependências do projeto (supondo que elas estejam listadas em um arquivo <code>requirements.txt</code>):
+        <pre><code>pip install -r requirements.txt</code></pre>
+      </li>
+    </ul>
+  </li>
+  
+  <li>
+    <strong>Configuração do Banco de Dados:</strong>
+    <ul>
+      <li>Execute as migrações para configurar o banco de dados:
+        <pre><code>python manage.py migrate</code></pre>
+      </li>
+    </ul>
+  </li>
+  
+  <li>
+    <strong>Execute o servidor:</strong>
+    <ul>
+      <li>Inicie o servidor Django:
+        <pre><code>python manage.py runserver</code></pre>
+      </li>
+      <li>Abra <code>http://127.0.0.1:8000/</code> no navegador para acessar o sistema.</li>
+    </ul>
+  </li>
+  
+  <li>
+    <strong>Utilize o Sistema:</strong>
+    <ul>
+      <li>Agora você pode adicionar, visualizar e gerenciar suas tarefas pelo sistema de lista de tarefas.</li>
+    </ul>
+  </li>
+  
+  <li>
+    <strong>Desativando o Ambiente Virtual:</strong>
+    <ul>
+      <li>Após terminar de usar o sistema, desative o ambiente virtual executando:
+        <pre><code>deactivate</code></pre>
+      </li>
+    </ul>
+  </li>
 </ol>
 
-<a href="https://github.com/seu-usuario/seu-repositorio" class="button">Acessar Repositório no GitHub</a>
 
 <h2>🛠️ Tecnologias Utilizadas</h2>
 <ul>
