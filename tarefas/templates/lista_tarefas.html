@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+{% load static %}
+
+{% block head %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/lista_tarefas.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Lista de Tarefas</title>
+</head>
+{% endblock %}
+
+{% block body %}
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-md bg-white shadow-lg rounded-lg p-6 space-y-6">
+        <h1 class="text-2xl font-bold text-center text-blue-600">Minha Lista de Tarefas</h1>
+        
+        <!-- Formulário de Adição de Tarefa -->
+        <form method="POST" action="{% url 'adicionar_tarefa' %}" class="space-y-4">
+            {% csrf_token %}
+            <input type="text" name="titulo" placeholder="Nova tarefa" required class="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <textarea name="descricao" placeholder="Descrição da tarefa" class="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+            <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-200">Adicionar Tarefa</button>
+        </form>
+
+        <!-- Lista de Tarefas -->
+        <div id="tarefas-list" class="space-y-4">
+            {% for tarefa in tarefas %}
+                <div class="flex justify-between items-center bg-gray-50 p-4 rounded-md shadow-sm">
+                    <div class="text-gray-700">
+                        <span class="font-semibold">{{ tarefa.titulo }}</span> - 
+                        <span class="text-sm text-gray-500">{{ tarefa.descricao }}</span>
+                    </div>
+                    <div class="space-x-2">
+                        <a href="{% url 'excluir_tarefa' tarefa.id %}" class="text-red-500 hover:text-red-600 transition">Excluir</a>
+                        {% if not tarefa.concluida %}
+                            <a href="{% url 'concluir_tarefa' tarefa.id %}" class="text-blue-500 hover:text-blue-600 transition">Concluir</a>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <!-- Modal para descrição da tarefa -->
+        <div id="modal" class="modal fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+            <div class="modal-content bg-white p-6 rounded-md shadow-lg w-4/5 max-w-lg relative">
+                <span class="close text-red-500 text-2xl font-bold cursor-pointer absolute top-4 right-4" onclick="fecharModal()">&times;</span>
+                <p id="descricao-tarefa" class="text-lg text-gray-800"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/lista_tarefas.js' %}"></script>
+</body>
+{% endblock %}
