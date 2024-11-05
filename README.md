@@ -10,8 +10,9 @@
 
 <h1>📋 Minha Lista de Tarefas</h1>
 
-![image](https://github.com/user-attachments/assets/5a85019c-05ac-42e3-a7eb-8e255f4db255) <br>
-![image](https://github.com/user-attachments/assets/89ea1dd5-7f40-47e4-b6f4-b20f41af6718)
+![image](https://github.com/user-attachments/assets/5b7b7b33-220f-4d18-9a59-179836dbec01)<br>
+![image](https://github.com/user-attachments/assets/93a022e0-2aa9-450f-abcc-0b1d857bb10f)
+
 
 
 
